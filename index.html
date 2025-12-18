@@ -1,0 +1,253 @@
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Part-Time Business Development Executive</title>
+    <style>
+      :root {
+        --bg: #0b0f19;
+        --card: rgba(255, 255, 255, 0.06);
+        --text: #e8ecf3;
+        --muted: rgba(232, 236, 243, 0.7);
+        --border: rgba(255, 255, 255, 0.12);
+        --accent: #7c5cff;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+        background: radial-gradient(1200px 600px at 20% 0%, rgba(124, 92, 255, 0.25), transparent 55%),
+                    radial-gradient(900px 500px at 90% 20%, rgba(92, 225, 255, 0.14), transparent 55%),
+                    var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+      .wrap {
+        max-width: 920px;
+        margin: 0 auto;
+        padding: 56px 20px;
+      }
+      .card {
+        background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04));
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 28px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+      }
+      .badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 10px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: rgba(255,255,255,0.05);
+        color: var(--muted);
+        font-size: 13px;
+      }
+      .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--accent);
+        box-shadow: 0 0 0 4px rgba(124, 92, 255, 0.18);
+      }
+      h1 {
+        font-size: 34px;
+        line-height: 1.2;
+        margin: 14px 0 6px;
+        letter-spacing: -0.02em;
+      }
+      .subtitle {
+        margin: 0 0 18px;
+        color: var(--muted);
+        font-size: 16px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 20px;
+      }
+      @media (min-width: 860px) {
+        .grid { grid-template-columns: 1fr 1fr; }
+      }
+      .section {
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 16px 16px 14px;
+        background: rgba(0,0,0,0.14);
+      }
+      .section h2 {
+        margin: 0 0 10px;
+        font-size: 16px;
+        letter-spacing: -0.01em;
+      }
+      ul { margin: 0; padding-left: 18px; color: var(--muted); }
+      li { margin: 6px 0; }
+      .two-col {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      @media (min-width: 860px) {
+        .two-col { grid-template-columns: 1fr 1fr; }
+      }
+      .cta {
+        margin-top: 20px;
+        padding: 16px;
+        border-radius: 14px;
+        border: 1px solid rgba(124, 92, 255, 0.35);
+        background: linear-gradient(180deg, rgba(124, 92, 255, 0.18), rgba(124, 92, 255, 0.08));
+      }
+      .cta h3 { margin: 0 0 8px; font-size: 16px; }
+      .cta p { margin: 0 0 12px; color: var(--muted); }
+      .btnrow {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 12px;
+        border-radius: 12px;
+        border: 1px solid var(--border);
+        background: rgba(255,255,255,0.06);
+        color: var(--text);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+      }
+      .btn.primary {
+        border-color: rgba(124, 92, 255, 0.65);
+        background: rgba(124, 92, 255, 0.22);
+      }
+      .fineprint {
+        margin-top: 14px;
+        font-size: 12px;
+        color: rgba(232, 236, 243, 0.55);
+      }
+      .kvs {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 14px;
+      }
+      @media (min-width: 860px) {
+        .kvs { grid-template-columns: 1fr 1fr 1fr; }
+      }
+      .kv {
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 12px;
+        background: rgba(255,255,255,0.04);
+      }
+      .kv .label { font-size: 12px; color: rgba(232, 236, 243, 0.6); margin-bottom: 4px; }
+      .kv .value { font-size: 14px; font-weight: 650; }
+    </style>
+  </head>
+
+  <body>
+    <main class="wrap">
+      <article class="card">
+        <div class="badge"><span class="dot"></span> Remote · Part-time · Commission-based</div>
+
+        <h1>Part-Time Business Development Executive</h1>
+        <p class="subtitle">Outbound and Partnerships</p>
+
+        <p>
+          We are hiring a part-time Business Development Executive to drive outbound outreach for
+          brand partnerships and media placements. The role focuses on starting conversations,
+          building initial interest, and booking opportunities. You will not be responsible for
+          negotiating or closing deals.
+        </p>
+
+        <div class="kvs">
+          <div class="kv">
+            <div class="label">Time commitment</div>
+            <div class="value">10 to 15 hours per week</div>
+          </div>
+          <div class="kv">
+            <div class="label">Channels</div>
+            <div class="value">LinkedIn and Email</div>
+          </div>
+          <div class="kv">
+            <div class="label">Growth</div>
+            <div class="value">Full-time opportunity</div>
+          </div>
+        </div>
+
+        <div class="grid">
+          <section class="section">
+            <h2>Responsibilities</h2>
+            <ul>
+              <li>Reach out to brands and companies via LinkedIn and email</li>
+              <li>Pitch collaboration, sponsorship, and partnership opportunities</li>
+              <li>Identify and connect with marketing, growth, and partnerships decision-makers</li>
+              <li>Book qualified intro calls</li>
+              <li>Reach out to PR agencies, media agencies, editors, and publications</li>
+              <li>Pitch founder stories, expert articles, interviews, and podcast features</li>
+              <li>Track outreach and follow up consistently using Google Sheets or Notion</li>
+            </ul>
+          </section>
+
+          <section class="section">
+            <h2>Requirements</h2>
+            <ul>
+              <li>Strong written communication skills</li>
+              <li>Comfort with cold outreach using LinkedIn DMs and email</li>
+              <li>Basic understanding of sales, partnerships, or lead generation</li>
+              <li>High consistency and self-motivation</li>
+              <li>Ability to work independently</li>
+              <li>Prior SDR, sales intern, or lead generation experience is a plus</li>
+            </ul>
+          </section>
+        </div>
+
+        <div class="two-col" style="margin-top: 16px;">
+          <section class="section">
+            <h2>Compensation</h2>
+            <ul>
+              <li>Commission-based</li>
+              <li>Brand partnerships pay 10 to 20 percent of first deal value</li>
+              <li>Media placements pay a fixed payout per successful placement</li>
+              <li>Payments made after deal closure or publication</li>
+              <li>High performers will be considered for a full-time role</li>
+            </ul>
+          </section>
+
+          <section class="section">
+            <h2>What success looks like</h2>
+            <ul>
+              <li>Consistent outbound activity</li>
+              <li>Qualified conversations with brands and agencies</li>
+              <li>Intro calls booked</li>
+              <li>Brand deals and media placements generated</li>
+            </ul>
+          </section>
+        </div>
+
+        <section class="cta" aria-label="Apply section">
+          <h3>Apply</h3>
+          <p>
+            Send a brief note covering your experience with outbound outreach, channels used, and why you are a good fit.
+          </p>
+          <div class="btnrow">
+            <!-- Replace with your links -->
+            <a class="btn primary" href="mailto:youremail@example.com?subject=Application%20-%20Part-Time%20Business%20Development%20Executive">Apply via Email</a>
+            <a class="btn" href="https://www.linkedin.com/in/yourprofile/" target="_blank" rel="noopener">Message on LinkedIn</a>
+          </div>
+          <div class="fineprint">
+            Note: This role is part-time and commission-based. Top performers may be offered a full-time position.
+          </div>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
+```
